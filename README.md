@@ -32,4 +32,4 @@ $ bower install
 $ gulp develop
 ```
 
-- Application will be served at URL : [http://localhost:6789]
+- Application will be served at URL : http://localhost:6789
