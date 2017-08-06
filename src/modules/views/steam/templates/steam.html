@@ -1,0 +1,17 @@
+<h4>Derwent Innovation credentials serach:</h4>
+<h6 style="color: red">Note: Creds search is audited to avoid misuse</h6>
+<div class="form-group">
+<span us-spinner="{radius:10, width:5, length: 5, color: 'black'}" spinner-key="spinner-2"></span>
+    <label for="userid">Emaid ID:</label>
+    <input type="text" class="form-control" id="userid" ng-model=vm.email>
+    <label for="environment">Environment:</label>
+     <select class="form-control" id="environment" ng-model=vm.env>
+       <option>QA</option>
+       <option>PROD</option>
+       <option>SPRING</option>
+     </select>
+     <br>
+    <button type="submit" class="btn btn-primary" ng-click="vm.fetchCreds()">Submit</button>
+    <h5 ng-show="vm.password">Password is: {{vm.password}}</h5>
+    <h5 ng-show="vm.invalidUser">The user does not exist in the {{vm.env}} environment.</h5>
+</div>

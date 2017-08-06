@@ -1,0 +1,54 @@
+<div>
+  <div class="container-fluid">
+    <div class="row"></div>
+    <div class="col-md-9">
+      <div class="mainForm"></div>
+    </div>
+    <div class="col-md-3">
+      <img src="/assets/img/big.png" alt="" style="width: 250px;">
+      <br/>
+      <br/>
+      <br/>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#signin">Sign In</a></li>
+        <li><a data-toggle="tab" href="#signup">Sign Up</a></li>
+      </ul>
+      <div class="tab-content">
+      <br/>
+        <div id="signin" class="tab-pane fade in active">
+        <div class="row">
+          <div class="col-md-4"><label><b>User ID: </b></label></div>
+          <div class="col-md-8"><input type="text" placeholder="Enter User ID" ng-model=vm.userID required></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"><label><b>Password: </b></label></div>
+          <div class="col-md-8"><input type="password" placeholder="Enter Password" name=vm.password required></div>
+        </div>
+        <div class="row"><button type="submit" ng-click=vm.loginToApp()>Login</button></div>
+          <!-- <br/> -->
+        </div>
+        <div id="signup" class="tab-pane fade">
+        <div class="row">
+          <div class="col-md-4"><label><b>Name: </b></label></div>
+          <div class="col-md-8"><input type="text" placeholder="Enter Name" ng-model=vm.userName required></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"><label><b>E-mail: </b></label></div>
+          <div class="col-md-8"><input type="password" placeholder="Enter E-mail" name=vm.email required></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"><label><b>User ID: </b></label></div>
+          <div class="col-md-8"><input type="text" placeholder="Enter Username" ng-model=vm.userID required></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"><label><b>Password: </b></label></div>
+          <div class="col-md-8"><input type="password" placeholder="Enter Password" name=vm.password required></div>
+        </div>
+          <div class="row">
+            <button type="submit" ng-click=vm.signUp()>Sign up</button>
+          </div>       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+// ==========================================================================
+// LESS file for @import (reference) by other files in the app
+// Templated into the build as a CSS file
+// ==========================================================================
+
+
+
+// App @imports
+// ==========================================================================
+
+@import './main';
+
+@media screen and (min-width: 1024px) {
+   .containerHeight{
+    height:600px;
+    border:1px;
+    border-style: solid;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px;
+      }
+}      
+
+@media screen and (max-width: 800px) {
+  .containerHeight{
+    height:150px;
+   }
+}
+
+    @media screen and (max-width: 600px) {
+    .containerHeight{
+        height:100px;
+       }
+}

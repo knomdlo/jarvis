@@ -1,0 +1,10 @@
+
+<div class="list-group" ng-repeat = "row in vm.content">
+  <a ui-sref="{{'.' + row.route}}" class="side-bar">{{row.label}}</a>
+</div>
+
+<!-- <ul class="nav nav-tabs">
+<li ng-repeat = "row in vm.content">
+  <a data-toggle="tab" href="{{'#' + row.route}}">{{row.label}}</a>
+</li>
+</ul> -->

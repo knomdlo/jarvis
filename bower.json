@@ -1,0 +1,91 @@
+{
+  "name": "1p-frontend",
+  "version": "1.8.0",
+  "description": "IP & S - One Platform Front-End Application",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ThomsonReuters-IPS/1p-frontend-new.git"
+  },
+  "dependencies": {
+    "angular": "1.4.2",
+    "angular-animate": "1.4.2",
+    "angular-aria": "1.4.2",
+    "angular-bootstrap": "0.13.1",
+    "angular-cookies": "1.4.2",
+    "angular-elastic": "2.5.0",
+    "angular-media-queries": "0.4.1",
+    "angular-messages": "1.4.2",
+    "angular-mocks": "1.4.2",
+    "angular-moment": "0.10.3",
+    "angular-resource": "1.4.2",
+    "angular-sessionstorage": "1.1.1",
+    "angular-social-links": "0.0.19",
+    "angular-ui-router": "0.2.15",
+    "bootstrap": "3.3.5",
+    "font-awesome": "4.5.0",
+    "ng-focus-if": "1.0.7",
+    "ng-focus-on": "0.2.2",
+    "ngInfiniteScroll": "1.2.1",
+    "oclazyload": "^1.0.9",
+    "satellizer": "0.13.4",
+    "textAngular": "1.4.1",
+    "underscore": "1.8.3",
+  	"ngtoast": "",
+    "angular-spinner": ""
+  },
+  "devDependencies": {
+    "karma-read-json": "1.1.0"
+  },
+  "overrides": {
+    "angular": {
+      "dependencies": {
+        "jquery": "*"
+      }
+    },
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "css-element-queries": {
+      "main": [
+        "src/ElementQueries.js",
+        "src/ResizeSensor.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    },
+    "headroom.js": {
+      "dependencies": {
+        "angular": "*"
+      }
+    },
+    "ng-focus-on": {
+      "dependencies": {
+        "angular": "*"
+      }
+    },
+    "ng-tags-input": {
+      "main": [
+        "build/ng-tags-input.js",
+        "build/ng-tags-input.css"
+      ]
+    },
+    "rangy": {
+      "dependencies": {
+        "angular": "*"
+      }
+    }
+  },
+  "resolutions": {
+    "angular": "1.4.2",
+    "font-awesome": "4.5.0",
+    "jquery": "2.2.3",
+    "ng-tags-input": "bdd9333"
+  }
+}

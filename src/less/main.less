@@ -1,0 +1,62 @@
+@import (reference) './bootstrap';
+
+// ==========================================================================
+// Bootstrap overrides
+// ==========================================================================
+body { padding-top: 55px; }
+
+// ==========================================================================
+// Main - Shared Styles for Global Elements
+// ==========================================================================
+
+
+// ==========================================================================
+// Helper Classes
+// ==========================================================================
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.title-case {
+  text-transform: lowercase;
+  &::first-letter{
+    text-transform: uppercase;
+  }
+}
+
+.active-nav {
+  background: white;
+  color: black;
+}
+
+.spinner:before {
+background-color: rgba(49, 37, 37, 0.2);
+border-radius: 6px;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+position: fixed;
+content: " ";
+}
